@@ -1,6 +1,6 @@
 {
   "name": "borland",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "hapi plugin for working with toolbox",
   "main": "lib/index.js",
   "scripts": {
