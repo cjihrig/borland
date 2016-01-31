@@ -14,7 +14,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node dev/server.js",
+    "start": "node dev/server.js & open http://localhost:5000/",
     "test": "belly-button && lab"
   },
   "engines": {
