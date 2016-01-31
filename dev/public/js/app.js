@@ -90,7 +90,6 @@
   }
 
   var handler = function (message) {
-    console.log(message)
     if (message.type === 'register') {
       register(message);
     }
@@ -103,6 +102,20 @@
   client.connect({ auth: { headers: { authorization: 'Basic am9objpzZWNyZXQ=' } } }, function (err) {
 
     client.subscribe('/data', handler, function (err) {
+      if (err) {
+        console.error(err);
+      }
+    });
+  });
+
+  $('#signalBtn').click(function () {
+    var payload = {
+      command: 'signal-kill',
+      options: {
+        signal: $('#signal').val()
+      }
+    };
+    client.request({ path: 'command', method: 'POST', payload: payload }, function (err) {
       if (err) {
         console.error(err);
       }
