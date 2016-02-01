@@ -1,5 +1,6 @@
 'use strict';
 
+const ChildProcess = require('child_process');
 const Path = require('path');
 const Hapi = require('hapi');
 const Inert = require('inert');
@@ -49,5 +50,7 @@ server.register([Inert, Nes, { register: Borland, options: { report: report } }]
     }
 
     console.log(`Server started at ${server.info.uri}`);
+
+    ChildProcess.exec('open http://localhost:' + server.info.port);
   });
 });
