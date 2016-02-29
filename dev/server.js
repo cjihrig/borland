@@ -19,8 +19,8 @@ const server = new Hapi.Server({
   }
 });
 
-const report = function (source, type, data, tags) {
-  server.publish('/data', { source, type, data, tags });
+const report = function (source, type, data) {
+  server.publish('/data', { source, type, data });
 };
 
 server.connection({ port: 5000 });

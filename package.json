@@ -14,24 +14,25 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node dev/server.js",
+    "start": "node -r ./node_modules/toolbag dev/server.js",
     "test": "belly-button && lab"
   },
   "engines": {
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "joi": "7.2.2",
-    "node-uuid": "1.4.7"
+    "joi": "8.x.x",
+    "node-uuid": "1.x.x"
   },
   "devDependencies": {
     "belly-button": "1.0.0",
     "code": "2.1.0",
-    "hapi": "12.1.0",
+    "hapi": "13.x.x",
     "inert": "^3.2.0",
     "influx": "4.1.0",
     "lab": "8.1.0",
-    "nes": "2.2.0"
+    "nes": "2.2.0",
+    "toolbag": "0.x.x"
   },
   "keywords": [
     "hapi",
