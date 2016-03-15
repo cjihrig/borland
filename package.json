@@ -1,6 +1,6 @@
 {
   "name": "borland",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "hapi plugin for working with toolbox",
   "author": "",
   "main": "lib/index.js",
@@ -21,18 +21,17 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "joi": "8.x.x",
-    "node-uuid": "1.x.x"
+    "joi": "8.0.4",
+    "node-uuid": "1.4.7"
   },
   "devDependencies": {
-    "belly-button": "1.0.0",
-    "code": "2.1.0",
+    "belly-button": "2.x.x",
+    "code": "2.x.x",
     "hapi": "13.x.x",
-    "inert": "^3.2.0",
+    "inert": "3.x.x",
     "influx": "4.1.0",
-    "lab": "8.1.0",
-    "nes": "2.2.0",
-    "toolbag": "0.x.x"
+    "lab": "10.x.x",
+    "nes": "4.x.x"
   },
   "keywords": [
     "hapi",
