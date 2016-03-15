@@ -31,7 +31,8 @@
     "inert": "3.x.x",
     "influx": "4.1.0",
     "lab": "10.x.x",
-    "nes": "4.x.x"
+    "nes": "4.x.x",
+    "toolbag": "1.x.x"
   },
   "keywords": [
     "hapi",
